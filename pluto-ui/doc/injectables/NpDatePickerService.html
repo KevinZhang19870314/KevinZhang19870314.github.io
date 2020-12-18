@@ -1,0 +1,1176 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ngx-pluto doc</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/default.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ngx-pluto doc</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="请输入查询关键字"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>可注入的</li>
+  <li>NpDatePickerService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">通用API</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>文件</h3>
+        </p>
+        <p class="comment">
+            <code>projects/ngx-pluto/src/lib/date-picker/date-picker.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">索引</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>方法</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#buildDaysPanel">buildDaysPanel</a>
+                            </li>
+                            <li>
+                                <a href="#buildDaysPanelForRangePicker">buildDaysPanelForRangePicker</a>
+                            </li>
+                            <li>
+                                <a href="#buildMonthsPanel">buildMonthsPanel</a>
+                            </li>
+                            <li>
+                                <a href="#buildStartAndEndDates">buildStartAndEndDates</a>
+                            </li>
+                            <li>
+                                <a href="#buildYearsPanel">buildYearsPanel</a>
+                            </li>
+                            <li>
+                                <a href="#calendar">calendar</a>
+                            </li>
+                            <li>
+                                <a href="#day">day</a>
+                            </li>
+                            <li>
+                                <a href="#getOverlayRef">getOverlayRef</a>
+                            </li>
+                            <li>
+                                <a href="#getWeekdaysMin">getWeekdaysMin</a>
+                            </li>
+                            <li>
+                                <a href="#isValid">isValid</a>
+                            </li>
+                            <li>
+                                <a href="#sortDates">sortDates</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>存取器</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#locale">locale</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">构造方法</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(overlayPositionBuilder: OverlayPositionBuilder, overlay: Overlay)</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>参数列表 :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>名称</td>
+                                                    <td>类型</td>
+                                                <td>可选的</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>overlayPositionBuilder</td>
+                                                  
+                                                        <td>
+                                                                    <code>OverlayPositionBuilder</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            否
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>overlay</td>
+                                                  
+                                                        <td>
+                                                                    <code>Overlay</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            否
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        方法
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildDaysPanel"></a>
+                    <span class="name">
+                        <b>
+                            buildDaysPanel
+                        </b>
+                        <a href="#buildDaysPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildDaysPanel(date: moment_.Moment, selectedDate: moment_.Moment)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>根据传入的日期构建当前显示日历面板（当前这个月的天数面板）。
+例如：传入日期为2020/08/20，则返回一个DayDataPerMonth数组，
+其中的value示例如下:</p>
+<p>[&#39;日&#39;, &#39;一&#39;, &#39;二&#39;, &#39;三&#39;, &#39;四&#39;, &#39;五&#39;, &#39;六&#39;, </p>
+<p>  &#39;26&#39;, &#39;27&#39;, &#39;28&#39;, &#39;29&#39;, &#39;30&#39;, &#39;31&#39;, &#39;1&#39;, </p>
+<p>  &#39;2&#39;,  &#39;3&#39;,  &#39;4&#39;,  &#39;5&#39;,  &#39;6&#39;,  &#39;7&#39;,  &#39;8&#39;,</p>
+<p>  &#39;9&#39;,  &#39;10&#39;, &#39;11&#39;, &#39;12&#39;, &#39;13&#39;, &#39;14&#39;, &#39;15&#39;,</p>
+<p>  &#39;16&#39;, &#39;17&#39;, &#39;18&#39;, &#39;19&#39;, &#39;20&#39;, &#39;21&#39;, &#39;22&#39;,</p>
+<p>  &#39;23&#39;, &#39;24&#39;, &#39;25&#39;, &#39;26&#39;, &#39;27&#39;, &#39;28&#39;, &#39;29&#39;,</p>
+<p>  &#39;30&#39;, &#39;31&#39;,  &#39;1&#39;,  &#39;2&#39;,  &#39;3&#39;,  &#39;4&#39;,  &#39;5&#39;]</p>
+</div>
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                    <td>描述</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                    <td>
+                                        <p>构建日期面板的日期</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>selectedDate</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                    <td>
+                                        <p>当前选中的日期</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="../interfaces/DayDataPerMonth.html" target="_self" >Array&lt;DayDataPerMonth&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildDaysPanelForRangePicker"></a>
+                    <span class="name">
+                        <b>
+                            buildDaysPanelForRangePicker
+                        </b>
+                        <a href="#buildDaysPanelForRangePicker"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildDaysPanelForRangePicker(date: moment_.Moment, selectedDate: moment_.Moment, hoverDate: moment_.Moment, dates: Array<moment_.Moment>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>构建时间区间选择当鼠标hover面板时的状态，同buildDaysPanel的功能，
+增加对象DayDataPerMonth中对字段isWithinDateRangeHover的值的区分。</p>
+</div>
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                    <td>缺省值</td>
+                                    <td>描述</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>构建日期面板的日期</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>selectedDate</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>当前选中的日期</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hoverDate</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        <p>当前hover的时间moment值</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>dates</td>
+                                    <td>
+                                            <code>Array&lt;moment_.Moment&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+                                    <td>
+                                        <code>[]</code>
+                                    </td>
+
+                                    <td>
+                                        <p>需要传入此时间区间字段，代表时间区间已选择的区间值</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildMonthsPanel"></a>
+                    <span class="name">
+                        <b>
+                            buildMonthsPanel
+                        </b>
+                        <a href="#buildMonthsPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildMonthsPanel(date: moment_.Moment, selectedDate: moment_.Moment)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>构建当前年份的全部月份</p>
+</div>
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                    <td>描述</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>selectedDate</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                    <td>
+                                        <p>当前选中的日期</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="../interfaces/MonthData.html" target="_self" >Array&lt;MonthData&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildStartAndEndDates"></a>
+                    <span class="name">
+                        <b>
+                            buildStartAndEndDates
+                        </b>
+                        <a href="#buildStartAndEndDates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildStartAndEndDates(sDate: moment_.Moment, eDate: moment_.Moment)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sDate</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>eDate</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildYearsPanel"></a>
+                    <span class="name">
+                        <b>
+                            buildYearsPanel
+                        </b>
+                        <a href="#buildYearsPanel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buildYearsPanel(date: moment_.Moment, year: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, selectedDate: moment_.Moment)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>根据传入的moment时间及传入的年份生成年份范围数组YearData。
+例如：year = 2020， 年份范围value示例为</p>
+<p>[</p>
+<div><pre class="line-numbers"><code class="language-none">  2019, 2020, 2021, 
+
+  2022, 2023, 2024, 
+
+  2025, 2026, 2027, 
+
+  2028, 2029, 2030</code></pre></div><p>]</p>
+</div>
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                    <td>描述</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                    <td>
+                                        <p>Moment时间</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>year</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                    <td>
+                                        <p>年份YYYY， 例：2020</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>selectedDate</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                    <td>
+                                        <p>当前选中的日期</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="../interfaces/YearData.html" target="_self" >Array&lt;YearData&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calendar"></a>
+                    <span class="name">
+                        <b>
+                            calendar
+                        </b>
+                        <a href="#calendar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calendar(date: moment_.Moment, locale: <a href="../undefineds/DatePickerLocale.html">DatePickerLocale</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>获取calendar时间，例如今天，昨天，明天等 </p>
+</div>
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                    <td>缺省值</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>locale</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#DatePickerLocale" target="_self" >DatePickerLocale</a></code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;zh-cn&#x27;</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="day"></a>
+                    <span class="name">
+                        <b>
+                            day
+                        </b>
+                        <a href="#day"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>day(date: moment_.Moment)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                            <code>moment_.Moment</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOverlayRef"></a>
+                    <span class="name">
+                        <b>
+                            getOverlayRef
+                        </b>
+                        <a href="#getOverlayRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOverlayRef(elementRef: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>elementRef</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>    <code>OverlayRef</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getWeekdaysMin"></a>
+                    <span class="name">
+                        <b>
+                            getWeekdaysMin
+                        </b>
+                        <a href="#getWeekdaysMin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getWeekdaysMin()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isValid"></a>
+                    <span class="name">
+                        <b>
+                            isValid
+                        </b>
+                        <a href="#isValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isValid(date: moment_.Moment | string)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                            <code>moment_.Moment | string</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortDates"></a>
+                    <span class="name">
+                        <b>
+                            sortDates
+                        </b>
+                        <a href="#sortDates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortDates(dates: Array<moment_.Moment>, asc: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>参数列表 :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>名称</td>
+                                    <td>类型</td>
+                                    <td>可选的</td>
+                                    <td>缺省值</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dates</td>
+                                    <td>
+                                            <code>Array&lt;moment_.Moment&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>asc</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        否
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>返回 : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="accessors">
+        存取器
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locale"></a>
+                        <span class="name"><b>locale</b><a href="#locale"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>locale()</code></span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">无匹配的结果 "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'NpDatePickerService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
